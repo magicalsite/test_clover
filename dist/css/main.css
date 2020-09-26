@@ -46,12 +46,6 @@
   font-weight: normal;
   src: url("../fonts/BebasNeue/BebasNeue-light.ttf") format("truetype");
 }
-@font-face {
-  font-family: "bebasneue-regular";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/BebasNeue/BebasNeue-regular.ttf") format("truetype");
-}
 /* ==================================== */
 /* ==================================== */* ======== NORMALIZE AND RESET ======= */
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
