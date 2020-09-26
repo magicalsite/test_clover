@@ -343,7 +343,7 @@ function formValidation() {
 function scrollBanner() {
   $(document).scroll(function () {
     var scrollPos = $(this).scrollTop();
-    var transY = scrollPos / 23 + 'px';
+    var transY = -scrollPos / 23 + 'px';
     $('.about__opacity .js-word-bg').css({
       'transform': 'translateY(' + transY + ') rotate(90deg) '
     });
