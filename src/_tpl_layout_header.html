@@ -32,11 +32,11 @@
             <ul class="nav__list nav-js">
               @@if(context.currentItem != 'Home'){<li><a href="index.html">Home</a></li>}
 
-              <!-- @@if(context.currentItem == 'About'){<li class="current"><span>About</span></li>}
-              @@if(context.currentItem != 'About'){<li><a href="inner.html">About</a></li>} -->
+              @@if(context.currentItem == 'About'){<li class="current"><span>About</span></li>}
+              @@if(context.currentItem != 'About'){<li><a href="about.html">About</a></li>}
 
               @@if(context.currentItem == 'Work'){<li class="current"><span>Work</span>}
-              @@if(context.currentItem != 'Work'){<li><a href="index.html#section2">Work</a></li>}
+              @@if(context.currentItem != 'Work'){<li><a href="@@if(context.currentItem == 'Home') {#section2} @@if(context.currentItem != 'Home') {index.html#section2}">Work</a></li>}
             </ul>
           </nav>
         </div>

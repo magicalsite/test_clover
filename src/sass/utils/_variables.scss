@@ -40,13 +40,10 @@ $font-demi: "avenir-next-cyr-demi", Helvetica, Arial, sans-serif !default;
 
 @mixin font-bold {
   font-family: $font-bold;
-  font-weight: normal;
 }
 
 @mixin font-demi {
   font-family: $font-demi;
-  font-weight: normal;
-  font-style: normal;
 }
 
 
@@ -72,12 +69,10 @@ $font-alt-extra-bold: "circe-extra-bold", Helvetica, Arial, sans-serif !default;
 
 @mixin font-alt-bold {
   font-family: $font-alt-bold;
-  font-weight: normal;
 }
 
 @mixin font-alt-extra-bold {
   font-family: $font-alt-extra-bold;
-  font-weight: normal;
 }
 
 // Important font
@@ -293,7 +288,7 @@ $layout-page-space--mob: 1.3rem 1rem !default;
 // Layout text
 // ====================================================
 // Ширина текстового блока
-$layout-text-width: 100rem !default;
+$layout-text-width: 107rem !default;
 // Отступы текствого блока
 $layout-text-space: #{nth($layout-page-space, 1)} #{nth($layout-page-space, 2)} !default;
 $layout-text-space--tab: #{nth($layout-page-space--tab, 1)} #{nth($layout-page-space--tab, 2)} !default;

@@ -292,15 +292,19 @@
 </div> -->
   <!--HEADER-->
   <header class="header">
-    <div class="layout-page wrapper-hurkou layout-page-spaces">
+    <div class="layout-page layout-page-spaces">
       <div class="header-container">
         <div class="header-container__left">
-          <a href="index.html" title="Go home">
-            <div class="logotype  logoBlue"></div>
-          </a>
+          <div class="logo">
+            <div class="logo_dark"></div>
+            <div class="logo_light"></div>
+            <a href="index.html" title="Go home"><span>Clover Nikhola Khlusov Studio</span></a>
+            <!--logo for a print version-->
+            <img style="display: none;" src="img/logo.svg" alt="Print version logotype">
+          </div>
         </div>
         <div class="header-container__right">
-          <a href="#mainNav" class="nav-opener nav-opener-js">Open menu</a>
+          <!-- <a href="#mainNav" class="nav-opener nav-opener-js">Open menu</a> -->
           <div class="nav-wrap" id="mainNav">
             <div class="nav-header">
               <a href="index.html" class="logo-nav" title="Clover Nikhola Khlusov Studio">Clover Nikhola Khlusov Studio</a>
@@ -308,15 +312,15 @@
             </div>
             <nav class="nav">
               <ul class="nav__list nav-js">
-                <li><a href="index.html" class="nav__list_item">Home</a></li>
-                <li class="current"><span class="nav__list_item">About</span></li>
-                <li><a href="inner.html" class="nav__list_item">Work</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><span>About</span></li>
+                <li><a href=" index.html#section2">Work</a></li>
               </ul>
             </nav>
           </div>
           <div class="nav-overlay"></div>
         </div>
-        <div class="lang lang__work">
+        <div class="lang">
           <a class="lang__inner" href="#"><span>Ru</span></a>
         </div>
       </div>
@@ -324,7 +328,7 @@
   </header>
   <!--HEADER end-->
   <div class="wbg">
-    <div class="wbg__list  about__plus">
+    <div class="wbg__list  about__opacity">
       <div class="wbg__item js-word-bg">
         <div class="wbg__inner">
           <div class="wbg__word">UX/UI Design UX/UI Design UX/UI Design UX/UI Design</div>
@@ -347,57 +351,58 @@
     <div class="layout-page layout-page-spaces main__layout">
       <div class="article js-article">
         <div class="layout-text">
-          <h2 class="about__title">About</h2>
-          <div class="about__block">
+          <h2 class="about-title">About</h2>
+          <div class="about-wrap">
             <div class="article-share">
               <div class="share">
-                <a href="https://www.facebook.com/cloverstile" rel="noreferrer noopener" target="_blank" class="share__item" title="Share facebook">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path fill="#1778f2" d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                <a href="#" rel="noreferrer noopener" target="_blank" class="share__item" title="Share behance">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM17.1689 9.33487H13.7792V8.36374H17.1689V9.33487ZM16.87 10.1501C16.4621 9.9697 16.0038 9.87912 15.4943 9.87912C14.6371 9.87912 13.941 10.1472 13.4029 10.6795C12.8663 11.2133 12.5976 11.9803 12.5976 12.9804C12.5976 14.0465 12.8941 14.8172 13.4909 15.2902C14.0847 15.7639 14.7718 16 15.5508 16C16.4937 16 17.2275 15.7193 17.7513 15.1588C18.087 14.8053 18.2766 14.4571 18.318 14.1156H16.7564C16.6661 14.2849 16.5607 14.417 16.4411 14.5128C16.2236 14.6888 15.9398 14.7771 15.5929 14.7771C15.2633 14.7771 14.9825 14.7044 14.7492 14.5596C14.3639 14.3272 14.1622 13.9211 14.1366 13.3427H18.3986C18.4053 12.8445 18.3888 12.4614 18.3474 12.1971C18.2766 11.7449 18.1216 11.347 17.88 11.0039C17.6151 10.6149 17.2787 10.3298 16.87 10.1501ZM9.42254 8C10.3874 8.01411 11.07 8.29105 11.4726 8.83156C11.7142 9.16344 11.8354 9.55991 11.8354 10.0225C11.8354 10.4984 11.7142 10.8822 11.4696 11.1718C11.3326 11.3336 11.1317 11.4821 10.866 11.6158C11.2694 11.7613 11.5735 11.9907 11.7804 12.3048C11.9851 12.6181 12.0882 12.9997 12.0882 13.4482C12.0882 13.9107 11.9708 14.3258 11.7353 14.6925C11.5862 14.9353 11.3996 15.1402 11.1753 15.3065C10.9232 15.4974 10.6259 15.6273 10.282 15.6986C9.93807 15.7691 9.56629 15.8033 9.1644 15.8033H5.60013V8H9.42254Z" fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.17651 9.35498H8.89845C9.27701 9.35498 9.58859 9.39582 9.83393 9.47674C10.1169 9.59405 10.2584 9.83387 10.2584 10.1984C10.2584 10.5251 10.1508 10.7538 9.93704 10.883C9.7218 11.0121 9.44258 11.0767 9.10015 11.0767H7.17651V9.35498ZM14.5821 11.4538C14.7981 11.2341 15.1037 11.1242 15.495 11.1242C15.8563 11.1242 16.158 11.2274 16.4034 11.4345C16.6457 11.6432 16.7827 11.9461 16.8105 12.347H14.1742C14.2299 11.9713 14.3661 11.6736 14.5821 11.4538ZM9.12423 12.3679H7.17651V14.4491H9.09714C9.44032 14.4491 9.70825 14.403 9.89866 14.3117C10.2456 14.1409 10.4187 13.8172 10.4187 13.3376C10.4187 12.9307 10.2516 12.6523 9.91521 12.5001C9.72706 12.4155 9.4629 12.3709 9.12423 12.3679Z" fill="black" />
+                  </svg>
+                  <span>Behance</span>
+                </a>
+                <a href="https://www.facebook.com/cloverstile" target="_blank" class="share__item" title="Share facebook">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 12C24 5.37188 18.6281 0 12 0C5.37188 0 0 5.37188 0 12C0 17.9906 4.3875 22.9547 10.125 23.8547V15.4688H7.07812V12H10.125V9.35625C10.125 6.34922 11.9156 4.6875 14.6578 4.6875C15.9703 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8297C14.3391 7.875 13.875 8.80078 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8547C19.6125 22.9547 24 17.9906 24 12Z" fill="black" />
                   </svg>
                   <span>Facebook</span>
                 </a>
-                <a href="https://twitter.com/" target="_blank" class="share__item" title="Share twitter">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path fill="#1da0f2" d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+                <a href="#" target="_blank" class="share__item" title="Share telegram">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM8.03558 10.9007C6.83349 11.4256 5.59837 11.9648 4.46896 12.5869L4.46888 12.587C3.87914 13.0188 4.66303 13.3242 5.39836 13.6107C5.51526 13.6562 5.63094 13.7013 5.73968 13.7463C5.83016 13.7741 5.92218 13.8035 6.01542 13.8332C6.83325 14.0937 7.74519 14.3843 8.53916 13.9472C9.84344 13.198 11.0743 12.3317 12.3042 11.4662C12.7072 11.1826 13.11 10.8991 13.5153 10.6198C13.5343 10.6077 13.5558 10.5938 13.5792 10.5786C13.9245 10.3548 14.701 9.85141 14.4138 10.545C13.7345 11.2878 13.007 11.9453 12.2755 12.6065C11.7825 13.052 11.2878 13.4992 10.8048 13.9752C10.3841 14.317 9.94728 15.0044 10.4183 15.483C11.5033 16.2425 12.6052 16.9836 13.7064 17.7243C14.0648 17.9654 14.4231 18.2063 14.7807 18.4479C15.3868 18.9318 16.334 18.5404 16.4673 17.7842C16.5266 17.4364 16.586 17.0886 16.6455 16.7407C16.9743 14.8184 17.3032 12.8953 17.5938 10.9667C17.6333 10.6642 17.678 10.3617 17.7228 10.059C17.8314 9.32545 17.9401 8.591 17.974 7.8535C17.8865 7.11753 16.9941 7.27935 16.4975 7.44484C13.9449 8.41614 11.4178 9.45944 8.90074 10.5211C8.6156 10.6475 8.32656 10.7737 8.03558 10.9007Z" fill="black" />
                   </svg>
-                  <span>Twitter</span>
-                </a>
-                <a href="https://www.instagram.com/" target="_blank" class="share__item" title="Share instagram">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path fill="#a43b97" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
-                  </svg>
-                  <span>Instagram</span>
+                  <span>Telegram</span>
                 </a>
               </div>
             </div>
-            <div class="about__menu">
-              <ul>
+            <div class="about-menu">
+              <nav>
                 <a href="#about">ABOUT</a>
                 <a href="#services">SERVICES</a>
                 <a href="#contact">CONTACT</a>
-              </ul>
+              </nav>
             </div>
-            <div class="about__items">
-              <div id="about" class="about__items_point">
+            <div class="about-items">
+              <div id="about" class="about-items__point">
                 <h3>UX design product design</h3>
                 <img src="./img/about__image.png" alt="">
-                <p class="about__items_paragraph">
+                <p class="about-items__paragraph">
                   We provide a full range of systems to ensure the security of state borders and
                   perimeters. Our C4I solutions will allow you to plan, integrate and create unique border
                   and perimeter protection systems with the management ability from a single Control
                   Center.
                 </p>
-                <p class="about__items_paragraph">
+                <p class="about-items__paragraph">
                   We provide a full range of systems to ensure the security of state borders and
                   perimeters. Our C4I solutions will allow you to plan, integrate and create unique border
                   and perimeter protection systems with the management ability from a single Control
                   Center.
                 </p>
               </div>
-              <div id="services" class="about__items_point">
+              <div id="services" class="about-items__point">
                 <h3>Services</h3>
-                <div class="about__items_block">
+                <div class="about-items__block">
                   <h4>UX/UI DESIGN</h4>
                   <p class="about__items_paragraph">
                     We provide a full range of systems to ensure the security of state borders and
@@ -406,18 +411,18 @@
                     Control Center.
                   </p>
                 </div>
-                <div class="about__items_block">
+                <div class="about-items__block">
                   <h4>PRODUCT DESIGN</h4>
-                  <p class="about__items_paragraph">
+                  <p class="about-items__paragraph">
                     We provide a full range of systems to ensure the security of state borders and
                     perimeters. Our C4I solutions will allow you to plan, integrate and create unique
                     border and perimeter protection systems with the management ability from a single
                     Control Center.
                   </p>
                 </div>
-                <div class="about__items_block">
+                <div class="about-items__block">
                   <h4>BRANDING</h4>
-                  <p class="about__items_paragraph">
+                  <p class="about-items__paragraph">
                     We provide a full range of systems to ensure the security of state borders and
                     perimeters. Our C4I solutions will allow you to plan, integrate and create unique
                     border and perimeter protection systems with the management ability from a single
@@ -425,17 +430,17 @@
                   </p>
                 </div>
               </div>
-              <div id="contact" class="about__items_point">
+              <div id="contact" class="about-items__point">
                 <h3>Contact</h3>
-                <form action="" class="about__form">
+                <form class="about-form">
                   <input type="text" name="" id="" placeholder="Name">
                   <input type="email" name="" id="" placeholder="E - mail">
                   <textarea name="" id="" cols="30" rows="10" placeholder="Type your text here..."></textarea>
-                  <button type="submit" class="art-director__button">Send</button>
+                  <button type="submit">Send</button>
                 </form>
               </div>
             </div>
-            <div class="about__art-director art-director">
+            <div class="art-director">
               <img src="./img/art_director.png" alt="">
               <div class="art-director__name">
                 <span class="art-director__name-bold">NIKOLA</span><br>
@@ -445,7 +450,6 @@
               <div class="art-director__letter">U</div>
               <div class="art-director__letter">X</div>
             </div>
-            <div class="case-section__rectangle about__rect"></div>
           </div>
         </div>
       </div>
