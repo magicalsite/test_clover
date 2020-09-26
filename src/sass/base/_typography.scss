@@ -114,17 +114,6 @@ b, strong, th {
   @include font-bold;
 }
 
-i, em {
-  @include font-italic;
-}
-
-i b, i strong,
-em b, em strong,
-b i, b em,
-strong i, strong em {
-  @include font-bold-italic;
-}
-
 // Таблица
 // ----------------------------------------------------
 table {
