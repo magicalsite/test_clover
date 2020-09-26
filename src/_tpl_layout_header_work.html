@@ -1,0 +1,48 @@
+<!-- <div class="p-preloader js-p-preloader">
+  <div class="p-preloader__content">
+    <div class="p-preloader__logo"></div>
+  </div>
+</div> -->
+
+
+<!--HEADER-->
+<header class="header@@if(context.currentItem == 'Home'){ header_fixed}">
+  <div class="layout-page wrapper-hurkou layout-page-spaces">
+    <div class="header-container">
+      <div class="header-container__left">
+        
+          <a href="index.html" title="Go home">
+            <div class="logotype @@if(context.logoBlue){ logoBlue}"></div>
+          </a>
+       
+      </div>
+
+      <div class="header-container__right">
+        <a href="#mainNav" class="nav-opener nav-opener-js">Open menu</a>
+        <div class="nav-wrap" id="mainNav">
+          <div class="nav-header">
+            @@if(context.currentItem != 'Home'){<a href="index.html" class="logo-nav" title="Clover Nikhola Khlusov Studio">Clover Nikhola Khlusov Studio</a>}
+            @@if(context.currentItem == 'Home'){<span class="logo-nav">Clover Nikhola Khlusov Studio</span>}
+            <a href="#" class="nav-close-btn nav-close-btn-js">Close menu</a>
+          </div>
+          <nav class="nav">
+            <ul class="nav__list nav-js">
+              @@if(context.currentItem != 'Home'){<li><a href="index.html" class="nav__list_item">Home</a></li>}
+
+              @@if(context.currentItem == 'About'){<li class="current"><span class="nav__list_item">About</span></li>}
+              @@if(context.currentItem != 'About'){<li><a href="inner.html" class="nav__list_item">About</a></li>}
+
+              @@if(context.currentItem == 'Work'){<li class="current"><span class="nav__list_item">Work</span>}
+              @@if(context.currentItem != 'Work'){<li><a href="inner.html" class="nav__list_item">Work</a></li>}
+            </ul>
+          </nav>
+        </div>
+        <div class="nav-overlay"></div>
+      </div>
+      <div class="lang lang__work">
+        <a class="lang__inner" href="#"><span>Ru</span></a>
+      </div>
+    </div>
+  </div>
+</header>
+<!--HEADER end-->
