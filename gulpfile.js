@@ -262,6 +262,7 @@ gulp.task('sassCompilationForDist', function () {
       cascade: true
     }))
     .pipe(removeEmptyLines())
+    .pipe(cssnano())
     .pipe(gulp.dest(path.dist + '/css'))
 });
 
