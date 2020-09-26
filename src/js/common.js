@@ -3,16 +3,6 @@ var $WINDOW = $(window),
   $BODY = $('body');
 
 /**
- * Change font size on resize
- */
-// function changeFontSize() {
-//   var step = 0.0499;
-//   var fontSize = Math.round(window.innerWidth * step * 10) / 10;
-//   $HTML.css('font-size', fontSize + '%');
-// }
-// changeFontSize();
-
-/**
  * !Detects overlay scrollbars (when scrollbars on overflowed blocks are visible).
  * This is found most commonly on mobile and OS X.
  * */
@@ -26,10 +16,8 @@ var TOUCHEVENTS = ("ontouchstart" in document.documentElement);
 var md = new MobileDetect(window.navigator.userAgent);
 var DEVICE = !!md.mobile() || !!md.tablet();
 if (DEVICE) {
-
   $HTML.addClass('mobile-device');
   $('section').addClass('s-ready s-visible');
-
 }
 
 /**
@@ -49,17 +37,12 @@ function addTouchClasses() {
 function fullPageInitial() {
   var $fpSections = $('.fp-sections-js');
 
-  // if (!DEVICE && window.innerWidth >= 992) {
-  //
-  // }
   if ($fpSections.length) {
     var fpSectionSelector = '.fp-section-js';
     var $fpSection = $(fpSectionSelector);
     var $word = $('.js-word-bg .wbg__word');
     var parallaxValue = 0.2;
     var duration = 750;
-    // var breakpointWidth = 992;
-    // var breakpointHeight = 400;
 
     function historyAnchors() {
       var anchors = [];
@@ -161,10 +144,7 @@ function fullPageInitial() {
       if ($section.attr('data-wbg') === "footer") {
         $('.wbg__item').removeClass('twelfth');
       }
-
     }
-
-
     $fpSections.fullpage({
       css3: true,
       licenseKey: '11111111-11111111-11111111-11111111',
@@ -173,8 +153,6 @@ function fullPageInitial() {
       recordHistory: false,
       scrollingSpeed: duration,
       sectionSelector: fpSectionSelector,
-      // responsiveWidth: breakpointWidth, // and add css rule .fp-enabled
-      // responsiveHeight: breakpointHeight, // and add css rule .fp-enabled
       navigation: false,
       onLeave: function (origin, destination, direction) {
         sectionReady(destination);
@@ -210,21 +188,6 @@ function fullPageInitial() {
           e.preventDefault();
         })
       },
-    });
-
-    $('.btn-next-section-js').on('click', function (e) {
-      if ($fpSections.length) {
-        fullpage_api.moveSectionDown();
-      }
-      e.preventDefault();
-    });
-
-    $('.btn-to-section-js').on('click', function (e) {
-      var $thisBtn = $(this);
-      if ($fpSections.length) {
-        fullpage_api.moveTo($($thisBtn.attr('href')).index() + 1);
-      }
-      e.preventDefault();
     });
   }
 }
@@ -330,44 +293,6 @@ $HTML.keyup(function (event) {
 });
 
 /**
- * !Main menu toggle active class
- */
-// function toggleActiveMenuItem() {
-//   var $menu = $('.js-menu');
-//   var $menuItem = $('.js-menu-item');
-//   var $wordBg = $('.js-word-bg');
-//   var activeClass = 'm-active';
-
-//   if ($menu.length) {
-//     if (!$menu.has('.' + activeClass).length) {
-//       $menuItem.eq(0).addClass(activeClass);
-//     }
-
-//     $menu.on('mouseenter touchend', '.js-menu-anchor', function (e) {
-//       // if (window.innerWidth < 992) return;
-
-//       var $curAnchor = $(this);
-//       var $curItem = $curAnchor.closest($menuItem);
-
-//       if (e.handleObj.origType === 'touchend') {
-//         if (!$curItem.hasClass(activeClass)) {
-//           e.preventDefault();
-//         }
-//       }
-
-//       if ($curItem.hasClass(activeClass)) return;
-
-//       var $allItems = $curAnchor.closest($menu).find($menuItem);
-//       var index = $curItem.index();
-//       var $curWordBg = $wordBg.eq(index);
-
-//       $allItems.add($wordBg).removeClass(activeClass);
-//       $curItem.add($curWordBg).addClass(activeClass);
-//     });
-//   }
-// }
-
-/**
  * !Form validation
  * */
 function formValidation() {
@@ -435,40 +360,14 @@ function scrollBannerUX() {
   });
 }
 
-let arr = [];
-$('a[href^="#"]').click(function () {
-  var target = $(this).attr('href');
-  let a = $(this);
-  arr.push(a);
-
-  $(this).css({
-    "background-color": "#000",
-    "color": "#fff"
-  });
-  arr[arr.length - 2].css({
-    "background-color": "#fff",
-    "color": "#000"
-  });
-  $('html, body').animate({
-    scrollTop: $(target).offset().top
-  }, 600);
-  return false;
-});
-
-// $WINDOW.on('resize', function () {
-//   changeFontSize();
+// $WINDOW.on('load', function () {
+//   $HTML.addClass('page-loaded');
+//   $('.js-p-preloader').addClass('p-preloader_hide');
+//   $('.js-article').addClass('article-ready');
+//   $('.wrapper-hurkou').addClass('s-ready');
 // });
 
-$WINDOW.on('load', function () {
-  // changeFontSize();
-  $HTML.addClass('page-loaded');
-  $('.js-p-preloader').addClass('p-preloader_hide');
-  $('.js-article').addClass('article-ready');
-  $('.wrapper-hurkou').addClass('s-ready');
-});
-
 $(document).ready(function () {
-  // changeFontSize();
   // Base
   addTouchClasses();
   fullPageInitial();
@@ -478,8 +377,6 @@ $(document).ready(function () {
   objectFitImages(); // object-fit-images initial
   // Common
   mainNavigation();
-  // toggleActiveMenuItem();
-
   formValidation();
 
   //Parallax

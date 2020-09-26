@@ -172,7 +172,7 @@ gulp.task('copyLibsScriptsToJs', ['copyJqueryToJs'], function () {
     , 'src/libs/select2/dist/js/select2.full.min.js' // кастомный селект
     , 'src/libs/select2/dist/js/i18n/ru.js' // локализация для кастомного селекта
     , 'node_modules/object-fit-images/dist/ofi.min.js' // object-fit fix for non-support browsers
-    , 'src/libs/swiper/dist/js/swiper.min.js' // swiper
+    // , 'src/libs/swiper/dist/js/swiper.min.js' // swiper
     , 'src/_temp/jquery.nav.js' // nav and switch class
     , 'node_modules/mobile-detect/mobile-detect.min.js' // mobile detect
   ])

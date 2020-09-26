@@ -27,9 +27,7 @@ $breakpoints: (
 // ----------------------------------------------------
 $font-norm-reg: "avenir-next-cyr-regular", Helvetica, Arial, sans-serif !default;
 $font-norm: "avenir-next-cyr-medium", Helvetica, Arial, sans-serif !default;
-$font-italic: "avenir-next-cyr-medium-italic", Helvetica, Arial, sans-serif !default;
 $font-bold: "avenir-next-cyr-bold", Helvetica, Arial, sans-serif !default;
-$font-bold-italic: "avenir-next-cyr-bold-italic", Helvetica, Arial, sans-serif !default;
 $font-demi: "avenir-next-cyr-demi", Helvetica, Arial, sans-serif !default;
 
 @mixin font-norm-reg {
@@ -43,17 +41,6 @@ $font-demi: "avenir-next-cyr-demi", Helvetica, Arial, sans-serif !default;
 @mixin font-bold {
   font-family: $font-bold;
   font-weight: normal;
-}
-
-@mixin font-italic {
-  font-family: $font-italic;
-  font-style: normal;
-}
-
-@mixin font-bold-italic {
-  font-family: $font-bold-italic;
-  font-weight: normal;
-  font-style: normal;
 }
 
 @mixin font-demi {
