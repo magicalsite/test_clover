@@ -2471,6 +2471,26 @@
   }
 }
 
+.about-items__img-wrap {
+  margin: 0 -3.4rem;
+
+  @include media("<tab") {
+    margin: 0 -2.5rem;
+  }
+
+  @include media("<mob") {
+    margin: 0 -1.8rem;
+  }
+}
+
+.about-items__paragraph-wrap {
+  margin-top: -7rem;
+
+  @include media("<mob") {
+    margin-top: -2rem;
+  }
+}
+
 // About Form
 
 .about-form {
@@ -2481,6 +2501,7 @@
     padding: 2.4rem;
     border: 1px solid #d2d2d2;
     width: 100%;
+    font-size: 1.8rem;
 
     &:first-child {
       @include font-normal;
@@ -2490,8 +2511,15 @@
     &::placeholder {
       @include font-normal;
       font-size: 1.8rem;
-      line-height: 2.6rem;
       color: #ababab;
+
+      @include media("<tab") {
+        font-size: 1.4rem;
+      }
+    }
+
+    @include media("<tab") {
+      font-size: 1.4rem;
     }
   }
 
@@ -2502,12 +2530,20 @@
     resize: none;
     border: 1px solid #d2d2d2;
     border-radius: 0 0 1rem 1rem;
+    font-size: 1.8rem;
 
     &::placeholder {
       @include font-normal;
       font-size: 1.8rem;
-      line-height: 2.6rem;
       color: #ababab;
+
+      @include media("<tab") {
+        font-size: 1.4rem;
+      }
+    }
+
+    @include media("<tab") {
+      font-size: 1.4rem;
     }
   }
 
@@ -2522,5 +2558,9 @@
     background: #000000;
     border-radius: 0.5rem;
     margin-top: 2.5rem;
+
+    @include media("<tab") {
+      font-size: 1.2rem;
+    }
   }
 }
